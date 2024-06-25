@@ -2,7 +2,7 @@
 
 import { FEATURES } from "@/constants";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { RECIPE } from "@/constants/prompts";
 import OpenAI from "openai";
 
@@ -42,7 +42,7 @@ const Features = () => {
 
     try {
       const completion = await openai.chat.completions.create({
-        model: "gpt-4",
+        model: "gpt-4o",
         messages: [
           {
             role: "system",
@@ -83,7 +83,7 @@ const Features = () => {
       id="features"
       className="mr-28 flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24"
     >
-      <div className="max-container padding-container relative w-full flex justify-between">
+      <div className="max-container padding-container relative w-full flex flex-wrap justify-between">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
             src="/inventory.png"
@@ -118,7 +118,7 @@ const Features = () => {
               />
             ))}
           </ul>
-          <div className="mt-20 w-11/12 mx-auto flex items-center">
+          <div className="mt-20 w-11/12 mx-auto flex items-center flex-col sm:flex-row">
             <input
               type="text"
               value={ingredients}
@@ -126,17 +126,22 @@ const Features = () => {
               onKeyPress={handleKeyPress}
               onFocus={handleFocus}
               placeholder="Enter your ingredients"
-              className={`p-2 border rounded-lg w-full size-full text-center shadow-sm focus:shadow-lg transition-shadow duration-200 focus:outline-none ${
+              className={`p-3 border rounded-lg w-full sm:w-auto size-full text-center shadow-sm focus:shadow-lg transition-shadow duration-200 focus:outline-none ${
                 inputError
                   ? "border-red-500 border-2"
                   : "border-gray-10 focus:border-green-500"
               }`}
-              style={{ borderRadius: "15px", margin: "10px 0" }}
+              style={{
+                height: "60px",
+                borderRadius: "15px",
+                margin: "10px 0",
+                width: "100%",
+              }}
             />
 
             <button
               onClick={handleGenerateRecipes}
-              className="ml-2 p-2 bg-green-500 text-white rounded-full"
+              className="ml-2 p-3 bg-green-500 text-white rounded-full"
               style={{
                 height: "40px",
                 width: "40px",
@@ -155,10 +160,10 @@ const Features = () => {
           <div className="bg-white p-6 rounded-lg w-full md:w-4/5 lg:w-3/5 mt-15 mb-15 overflow-y-auto h-3/4">
             <h2 className="text-xl font-bold mb-4">Your Generated Recipe</h2>
             {loading ? (
-              <div className="flex justify-center items-center">
-                <div className="loader"></div>{" "}
+              <div className="flex flex-col justify-center items-center h-full">
+                <div className="loader mb-4"></div>{" "}
                 {/* Replace this with any loader you like */}
-                <p>Loading...</p>
+                <p className="text-lg font-semibold text-center">Loading...</p>
               </div>
             ) : (
               <div>
