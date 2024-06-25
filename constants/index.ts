@@ -56,7 +56,6 @@ export const FOOTER_LINKS = [
       { label: "Team", href: "/team" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/termsofservice" },
-      { label: "Contact Us", href: "#contact" },
     ],
   },
   {
