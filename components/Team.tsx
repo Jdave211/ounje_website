@@ -55,13 +55,13 @@ const Teams: React.FC = () => {
     },
     {
       name: "Brian Mbaji",
-      background: "Software Engineering Background",
+      background: "Software Engineering, Marketing Background",
       linkedIn: "https://www.linkedin.com/in/brianmbaji",
       image: "/brian.jpeg",
     },
     {
       name: "Chukelu Egboga",
-      background: "CTO, Software Engineering Background",
+      background: "Software Engineering Background",
       linkedIn: "https://www.linkedin.com/in/chukeluegboga",
       image: "/chukelu.jpeg",
     },
@@ -75,7 +75,7 @@ const Teams: React.FC = () => {
       <h1 className="text-4xl font-bold text-center text-black mb-8">
         Our Team
       </h1>
-      <div className="team-members flex flex-wrap justify-around">
+      <div className="team-members grid grid-cols-1 sm:grid-cols-2 gap-8 justify-center items-center">
         {teamMembers.map((member, index) => (
           <TeamMember
             key={index}
