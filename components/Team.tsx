@@ -43,9 +43,15 @@ const Teams: React.FC = () => {
   const teamMembers = [
     {
       name: "Dave Jaga",
-      background: "Business, Economics, and Software Background",
+      background: "Business Lead, CEO",
       linkedIn: "https://www.linkedin.com/in/dave-jaga-96a003244/",
       image: "/dave.jpeg",
+    },
+    {
+      name: "Tomi Jaga",
+      background: "Technical Lead, CTO",
+      linkedIn: "https://www.linkedin.com/in/tomijaga/",
+      image: "/tomi.jpeg",
     },
     {
       name: "Brian Mbaji",
@@ -55,7 +61,7 @@ const Teams: React.FC = () => {
     },
     {
       name: "Chukelu Egboga",
-      background: "Software Engineering Background",
+      background: "CTO, Software Engineering Background",
       linkedIn: "https://www.linkedin.com/in/chukeluegboga",
       image: "/chukelu.jpeg",
     },
