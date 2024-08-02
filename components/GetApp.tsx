@@ -8,10 +8,10 @@ const GetApp = () => {
       <div className="get-app">
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[320px]">
-            Get it for free soon!
+            Get it for free!
           </h2>
           <p className="regular-16 text-gray-10">
-            Coming soon to IOS and Android
+            Coming soon to Android
           </p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
             <Button
@@ -20,11 +20,11 @@ const GetApp = () => {
               icon="/apple.svg"
               variant="btn_white"
               full
-              link="https://3ld3vnq83ev.typeform.com/to/kZNmjRGc?typeform-source=ounjeio.wordpress.com"
+              link="https://apps.apple.com/ca/app/ounje/id6504951799"
             />
             <Button
               type="button"
-              title="Suggest a feature you would like to see"
+              title="Give us feedback"
               icon="/ideas.png"
               variant="btn_dark_green_outline"
               full

@@ -44,7 +44,7 @@ const Hero = () => {
             type="button"
             title="Download App"
             variant="btn_green"
-            link="https://3ld3vnq83ev.typeform.com/to/kZNmjRGc?typeform-source=ounjeio.wordpress.com"
+            link="https://apps.apple.com/ca/app/ounje/id6504951799"
           />
           <Button
             type="button"

@@ -4,15 +4,17 @@ const PrivacyPolicy = () => {
   return (
     <div
       id="privacy-policy"
-      className="p-6 max-w-3xl mx-auto font-sans border-2 border-black bg-gray-200"
-      style={{ marginBottom: "50px", padding: "24px" }}
+      className="p-6 sm:p-4 w-full max-w-3xl mx-auto font-sans border-2 border-black bg-gray-200"
+      style={{ marginBottom: "50px" }}
     >
-      <h1 className="text-4xl font-bold text-center text-black mb-8">
+      <h1 className="text-4xl sm:text-2xl font-bold text-center text-black mb-8">
         Privacy Policy
       </h1>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">Introduction</h2>
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
+          Introduction
+        </h2>
         <p className="text-black leading-relaxed">
           Welcome to Ounje. This Privacy Policy outlines how we collect, use,
           and protect your personal information when you use our app. By using
@@ -26,11 +28,11 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
           Information We Collect
         </h2>
 
-        <h3 className="text-xl font-semibold text-black mb-2">
+        <h3 className="text-xl sm:text-lg font-semibold text-black mb-2">
           Personal Information
         </h3>
         <p className="text-black leading-relaxed">
@@ -47,7 +49,7 @@ const PrivacyPolicy = () => {
           industry-standard encryption methods.)
         </p>
 
-        <h3 className="text-xl font-semibold text-black mb-2">
+        <h3 className="text-xl sm:text-lg font-semibold text-black mb-2">
           Inventory/Fridge Data
         </h3>
         <p className="text-black leading-relaxed">
@@ -59,7 +61,9 @@ const PrivacyPolicy = () => {
           update items in your inventory or fridge.
         </p>
 
-        <h3 className="text-xl font-semibold text-black mb-2">Saved Recipes</h3>
+        <h3 className="text-xl sm:text-lg font-semibold text-black mb-2">
+          Saved Recipes
+        </h3>
         <p className="text-black leading-relaxed">
           - <strong>Recipes</strong>: Collected when you save recipes within the
           app.
@@ -67,7 +71,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
           How We Collect Information
         </h2>
         <p className="text-black leading-relaxed">
@@ -82,7 +86,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
           Use of Information
         </h2>
         <p className="text-black leading-relaxed">
@@ -103,7 +107,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
           Sharing of Information
         </h2>
         <p className="text-black leading-relaxed">
@@ -127,7 +131,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
           Data Retention and Deletion
         </h2>
         <p className="text-black leading-relaxed">
@@ -144,7 +148,9 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">Your Rights</h2>
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
+          Your Rights
+        </h2>
         <p className="text-black leading-relaxed">
           You have the following rights regarding your personal information:
         </p>
@@ -169,7 +175,9 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">Security</h2>
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
+          Security
+        </h2>
         <p className="text-black leading-relaxed">
           We implement industry-standard security measures to protect your
           personal information from unauthorized access, alteration, disclosure,
@@ -180,7 +188,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
           Changes to This Privacy Policy
         </h2>
         <p className="text-black leading-relaxed">
@@ -192,7 +200,9 @@ const PrivacyPolicy = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-black mb-2">Contact Us</h2>
+        <h2 className="text-2xl sm:text-xl font-semibold text-black mb-2">
+          Contact Us
+        </h2>
         <p className="text-black leading-relaxed">
           If you have any questions or concerns about this Privacy Policy,
           please contact us at{" "}
